@@ -11,7 +11,6 @@ function Home () {
     <>
       {isAuthenticated && <button onClick={logout}>Se déconnecter</button>}
       <div className='container'>
-        <img className='img' src='/assets/img/test.png' />
         <Presentation />
       </div>
       <Partenariat />

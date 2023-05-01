@@ -1,14 +1,11 @@
-import { RiShoppingCart2Line } from 'react-icons/ri'
-import { useCart } from '../contexts/CartContext'
+import { HiUser } from 'react-icons/hi'
 
 import '../styles/CartIcon.scss'
 
 function CartIcon () {
-  const { state: { items } } = useCart()
   return (
     <div className='cart-icon'>
-      <RiShoppingCart2Line size={30} color='white' />
-      <span className='badge'>{items.length}</span>
+      <HiUser size={50} color='black' />
     </div>
   )
 }
