@@ -1,42 +1,22 @@
 import { Route, Routes } from 'react-router-dom'
-import About from '../pages/About'
-import AddRestaurant from '../pages/AddRestaurant'
-import Auth from '../pages/Auth'
+import NotreEquipe from '../pages/NotreEquipe'
+import NosServices from '../pages/NosServices'
 import Accueil from '../pages/Accueil'
-import Restaurant from '../pages/Restaurant'
-import Restaurants from '../pages/Restaurants'
-import { useAuth } from '../contexts/AuthContext'
+import Professionnels from '../pages/Professionnels'
+import DernieresVolontées from '../pages/DernieresVolontées'
 import Cart from '../pages/Cart'
 
 function Router () {
-  const { state: { isAuthenticated } } = useAuth()
-  if (isAuthenticated) {
-    return (
-      <Routes>
-        <Route index path='/' element={<Accueil />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/restaurants' element={<Restaurants />} />
-        <Route path='/restaurant'>
-          <Route path=':slug' element={<Restaurant />} />
-        </Route>
-        <Route path='/add-restaurant' element={<AddRestaurant />} />
-        <Route path='/cart' element={<Cart />} />
-      </Routes>
-    )
-  } else {
-    return (
-      <Routes>
-        <Route index path='/' element={<Accueil />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/restaurants' element={<Restaurants />} />
-        <Route path='/restaurant'>
-          <Route path=':slug' element={<Restaurant />} />
-        </Route>
-        <Route path='/auth' element={<Auth />} />
-        <Route path='/cart' element={<Cart />} />
-      </Routes>
-    )
-  }
+  return (
+    <Routes>
+      <Route index path='/' element={<Accueil />} />
+      <Route path='/notre-equipe' element={<NotreEquipe />} />
+      <Route path='/notre-equipe' element={<NosServices />} />
+      <Route path='/dernieres-volontées' element={<DernieresVolontées />} />
+      <Route path='/professionnels' element={<Professionnels />} />
+      <Route path='/cart' element={<Cart />} />
+    </Routes>
+  )
 }
 
 export default Router

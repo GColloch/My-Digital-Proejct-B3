@@ -1,12 +1,10 @@
 import { NavLink } from 'react-router-dom'
 import { useRef } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { useAuth } from '../contexts/AuthContext'
 import CartIcon from '../components/CartIcon'
 import '../styles/Navbar.scss'
 
 function Navbar () {
-  const { state: { isAuthenticated, user } } = useAuth()
   const navRef = useRef()
 
   const showNavbar = () => {
@@ -26,38 +24,33 @@ function Navbar () {
               Accueil
             </li>
           </NavLink>
-          <NavLink to='/about' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+          <NavLink to='/notre-equipe' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
-              A propos
+              Notre Équipe
             </li>
           </NavLink>
-          <NavLink to='/restaurants' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+          <NavLink to='/nos-services' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
-              Restaurants
-              {
-                isAuthenticated && (
-                  <ul>
-                    <NavLink to='/add-restaurant' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
-                      <li>
-                        Ajouter un restaurant
-                      </li>
-                    </NavLink>
-                  </ul>
-                )
-              }
+              Nos Services
             </li>
           </NavLink>
-          {
-            isAuthenticated
-              ? <li>Hello, {user.firstName}</li>
-              : (
-                <NavLink to='/auth' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
-                  <li>
-                    S'incrire / Se connecter
-                  </li>
-                </NavLink>
-                )
-          }
+          <NavLink to='/dernieres-volontées' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+            <li>
+              Dernières Volontées
+            </li>
+          </NavLink>
+          <NavLink to='/professionnels' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+            <li>
+              Professionnels
+            </li>
+          </NavLink>
+
+          <NavLink to='/faq' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+            <li>
+              FAQ
+            </li>
+          </NavLink>
+
           <NavLink to='/cart'>
             <li>
               <CartIcon />
