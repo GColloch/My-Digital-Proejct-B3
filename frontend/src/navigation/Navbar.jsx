@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useRef } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import CartIcon from '../components/CartIcon'
+import { FaBars, FaTimes, FaUserAlt } from 'react-icons/fa'
+
 import '../styles/Navbar.scss'
 
 function Navbar () {
@@ -16,8 +16,15 @@ function Navbar () {
   return (
     <>
       <header>
-
         <img src='/assets/img/logo.png' />
+
+        <div className='mon-espace'>
+          <FaUserAlt size={30} color='black' />
+          <NavLink to='/profil' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+            mon espace
+          </NavLink>
+        </div>
+
         <nav ref={navRef}>
           <NavLink to='/' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
@@ -51,11 +58,6 @@ function Navbar () {
             </li>
           </NavLink>
 
-          <NavLink to='/cart'>
-            <li>
-              <CartIcon />
-            </li>
-          </NavLink>
           <button
             className='nav-btn nav-close-btn'
             onClick={showNavbar}

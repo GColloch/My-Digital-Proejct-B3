@@ -12,7 +12,7 @@
 header {
 	display: flex;
   flex-direction: row;
-  background-color: $dark-color;
+  background-color: white;
   padding: 0;
   width: 100%;
   top: 0;
@@ -27,15 +27,33 @@ header {
   }
 }
 
-nav a {
+.mon-espace {
+  position: absolute;
+  top: 20px; // pour positionner le menu au-dessus du menu principal
+  right: 300px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    color: black;
+    padding-left: 10px;
+  }
+}
+nav {
+  margin: 0 auto;
+
+a {
 	margin: 0 1rem;
-	color: $primary-color;
+	color: black;
 	text-decoration: none;
   list-style: none;
-}
+  }
 
-nav a:hover {
+
+a:hover {
 	color: beige;
+  }
 }
 
 header .nav-btn {
@@ -66,7 +84,7 @@ nav {
     content: "";
     height: 4px;
     width: 0;
-    background: $primary-color;
+    background: #D4921A;
     position: absolute;
     border-radius: 10px;
     bottom: 10px;
@@ -107,6 +125,7 @@ nav {
   flex-wrap: nowrap;
   font-weight: bold;
 }
+
 @media only screen and (max-width: 930px) {
 	header .nav-btn {
 		visibility: visible;
@@ -128,6 +147,7 @@ nav {
 		transition: 1s;
 	}
 
+  
 	header .responsive_nav {
 		transform: translateY(100vh);
 	}

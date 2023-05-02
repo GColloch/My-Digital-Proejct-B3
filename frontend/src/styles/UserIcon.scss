@@ -1,7 +1,15 @@
 @import './variables';
 
-.cart-icon {
-  position: relative;
+header {
+  position: relative; // Ajouter cette ligne
+
+  .cart-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  
+}
   .badge {
     position: absolute;
     bottom: 0;
