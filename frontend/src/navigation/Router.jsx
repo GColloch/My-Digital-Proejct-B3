@@ -4,7 +4,6 @@ import NosServices from '../pages/NosServices'
 import Accueil from '../pages/Accueil'
 import Professionnels from '../pages/Professionnels'
 import DernieresVolontées from '../pages/DernieresVolontées'
-import Cart from '../pages/Cart'
 
 function Router () {
   return (
@@ -14,7 +13,7 @@ function Router () {
       <Route path='/notre-equipe' element={<NosServices />} />
       <Route path='/dernieres-volontées' element={<DernieresVolontées />} />
       <Route path='/professionnels' element={<Professionnels />} />
-      <Route path='/cart' element={<Cart />} />
+
     </Routes>
   )
 }

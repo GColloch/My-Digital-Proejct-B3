@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { FaBars, FaTimes, FaUserAlt } from 'react-icons/fa'
 
 import '../styles/Navbar.scss'
@@ -12,15 +12,34 @@ function Navbar () {
       'responsive_nav'
     )
   }
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true)
+    } else {
+      setIsScrolled(false)
+    }
+  }
 
   return (
     <>
       <header>
-        <img src='/assets/img/logo.png' />
+        <img className='logo' src='/assets/img/logo.png' />
 
-        <div className='mon-espace'>
-          <FaUserAlt size={30} color='black' />
-          <NavLink to='/profil' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+        <div
+          className={`mon-espace ${isScrolled ? 'scrolled' : ''}`}
+        >
+          <NavLink
+            to='/profil'
+            style={{ color: isScrolled ? 'black' : 'white' }}
+          ><FaUserAlt className='icon' size={30} color={isScrolled ? 'black' : 'white'} />
+
             mon espace
           </NavLink>
         </div>
@@ -31,19 +50,15 @@ function Navbar () {
               Accueil
             </li>
           </NavLink>
-          <NavLink to='/notre-equipe' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
-            <li>
-              Notre Équipe
-            </li>
-          </NavLink>
+
           <NavLink to='/nos-services' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
               Nos Services
             </li>
           </NavLink>
-          <NavLink to='/dernieres-volontées' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+          <NavLink to='/volontées-funéraires' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
-              Dernières Volontées
+              Volontées Funéraires
             </li>
           </NavLink>
           <NavLink to='/professionnels' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
@@ -51,7 +66,11 @@ function Navbar () {
               Professionnels
             </li>
           </NavLink>
-
+          <NavLink to='/notre-equipe' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+            <li>
+              Notre Équipe
+            </li>
+          </NavLink>
           <NavLink to='/faq' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
               FAQ

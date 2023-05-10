@@ -1,0 +1,50 @@
+.text {
+  margin-top: 100px;
+  padding-right: 15px;
+  max-width: 50%;
+  font-size: 8px;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 12px;
+    max-width: 40%;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    font-size: 20px;
+    max-width: 40%;
+    padding-left: 25px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Empiler les éléments verticalement */
+}
+
+@media only screen and (min-width: 767px) {
+  .container {
+    margin-top: 100px;
+  }
+}
+
+/* Ajouter le style pour le bouton */
+.button {
+  font-size: 25px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid gray; /* Ajouter une bordure de 2px solide de couleur grise */
+}
+
+
+.arrow-icon {
+  margin-left: 10px;
+}
+
+

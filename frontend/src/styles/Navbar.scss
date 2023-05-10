@@ -1,7 +1,3 @@
-@import './mixins';
-@import './variables';
-
-
 :root {
 	--mainColor: #29335c;
 	--mainColorLight: #5767aa;
@@ -10,6 +6,7 @@
 }
 
 header {
+  position: fixed;
 	display: flex;
   flex-direction: row;
   background-color: white;
@@ -20,26 +17,42 @@ header {
   height: 20vh;
   
   //logo
-  img {
+  .logo {
+    padding-top: 40px;
     padding-left: 20px;
     max-width: 100px;
     object-fit: contain;
   }
 }
-
 .mon-espace {
+  background-color: #235853;
   position: absolute;
-  top: 20px; // pour positionner le menu au-dessus du menu principal
-  right: 300px;
-  
+  padding-top: 12px;
+  top: 0;
+  left: 0; 
+  right: 0; 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 5vh;
+  
+  
   a {
-    color: black;
-    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: 200px;
+    color: white;
+    display: flex;
   }
+  
+  .icon {
+    margin-right: 10px;
+  }
+
 }
+
+
+
 nav {
   margin: 0 auto;
 
@@ -62,7 +75,6 @@ header .nav-btn {
 	background: transparent;
 	border: none;
 	outline: none;
-	color: $primary-color;
 	visibility: hidden;
 	opacity: 0;
 	font-size: 1.8rem;
@@ -73,6 +85,7 @@ header .nav-btn {
 
 header div,
 nav {
+  padding-top: 40px;
 	display: flex;
 	align-items: center;
 }
@@ -119,7 +132,6 @@ nav {
 }
 
  a {
-  color:  $primary-color;
   text-decoration: none;
   word-wrap: normal;
   flex-wrap: nowrap;
@@ -143,7 +155,6 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 0.7rem;
-		background-color: $dark-color;
 		transition: 1s;
 	}
 

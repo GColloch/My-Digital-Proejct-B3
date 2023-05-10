@@ -1,41 +1,10 @@
 import React from 'react'
 import '../styles/Presentation.scss'
-import { BsFillArrowRightCircleFill } from 'react-icons/bs'
-
 const Presentation = () => {
   return (
     <>
-      <h2 className='text'>texte</h2>
-      <a href='/tarificateur'>
-        <button className='button'>
-          Découvrez notre tarificateur
-          <BsFillArrowRightCircleFill size={20} className='arrow-icon' />
-        </button>
-      </a>
+      <img src='https://tse3.mm.bing.net/th?id=OIP.vmAh6m1AiUXNd9m_QSFnLgHaE7&pid=Api&P=0' className='body-image' />
 
-      <h2 className='text'>texte</h2>
-      <a href='/tarificateur'>
-        <button className='button'>
-          Découvrez notre équipe
-          <BsFillArrowRightCircleFill size={20} className='arrow-icon' />
-        </button>
-      </a>
-
-      <h3 className='text'>texte</h3>
-      <a href='/tarificateur'>
-        <button className='button'>
-          Inscrires ses dernières volontées
-          <BsFillArrowRightCircleFill size={20} className='arrow-icon' />
-        </button>
-      </a>
-
-      <h4 className='text'>texte</h4>
-      <a href='/tarificateur'>
-        <button className='button'>
-          Découvrez toutes les démarches
-          <BsFillArrowRightCircleFill size={20} className='arrow-icon' />
-        </button>
-      </a>
     </>
   )
 }
