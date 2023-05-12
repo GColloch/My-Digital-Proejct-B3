@@ -1,11 +1,22 @@
 import React from 'react'
 import '../styles/Presentation.scss'
+
 const Presentation = () => {
   return (
-    <>
-      <img src='https://tse3.mm.bing.net/th?id=OIP.vmAh6m1AiUXNd9m_QSFnLgHaE7&pid=Api&P=0' className='body-image' />
-
-    </>
+    <div className='presentation-container'>
+      <div className='image-container'>
+        <img src='/assets/img/banniere_Souriante.png' />
+        <div className='text-container'>
+          <h2>
+            <span>VOLONTÉS FU</span>NÉRAIRES
+          </h2>
+          <p>Un formulaire simple vous permettant de sauvegarder vos <br />
+            volontés funéraires et de les partager avec les personnes de votre choix
+          </p>
+          <button>Inscrivez vos volontés funéraires</button>
+        </div>
+      </div>
+    </div>
   )
 }
 

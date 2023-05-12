@@ -1,6 +1,6 @@
+import Avantages from '../components/Avantages'
 import Footer from '../components/Footer'
 import Presentation from '../components/Presentation'
-import '../styles/_footer.scss'
 
 function Home () {
   return (
@@ -8,6 +8,7 @@ function Home () {
       <div className='container'>
         <Presentation />
       </div>
+      <Avantages />
       <Footer />
     </>
   )

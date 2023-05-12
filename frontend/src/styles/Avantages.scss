@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container-avantages {
+  position: relative;
+}
+
+.image-circle {
+  position: absolute;
+  background-color: #FFA500;
+  z-index: -1;
+  top: -50px;
+  left: -50px;
+}
+
+.rounded-image {
+  margin-left: 20px;
+  width: 450px;
+  height: 400px;
+  
+}
+
+.text-container-avantages {
+  margin-left: 50px;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  margin: 0 20px;
+  text-align: center;
+  background-color: white;
+}
