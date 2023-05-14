@@ -31,13 +31,18 @@ const Avantages = () => {
             </div>
             <div class='card'>
               <div className='card-header'>
-                <h3>GUIDE</h3>
-                <img className='iconee' src='card-logo-url' alt='card-logo-description' />
+                <h3>LE GUIDE</h3>
               </div>
-              <p>Card description</p>
+              <p>Télécharger-le PDF <br />
+                complet qui vous <br />
+                permettra de vous <br />
+                expliquer les différentes <br />
+                étapes clés
+
+              </p>
             </div>
           </div>
-          <button>Call to action</button>
+          <button className='incription'>Inscrivez-vous à Nefti</button>
         </div>
       </div>
     </>
