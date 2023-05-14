@@ -51,14 +51,14 @@ function Navbar () {
             </li>
           </NavLink>
 
-          <NavLink to='/nos-services' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
-            <li>
-              Nos Services
-            </li>
-          </NavLink>
           <NavLink to='/volontées-funéraires' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
               Volontées Funéraires
+            </li>
+          </NavLink>
+          <NavLink to='/nos-services' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+            <li>
+              Nos Services
             </li>
           </NavLink>
           <NavLink to='/professionnels' className={(nav) => (nav.isActive ? 'nav-active' : '')}>

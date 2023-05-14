@@ -5,7 +5,7 @@ const Presentation = () => {
   return (
     <div className='presentation-container'>
       <div className='image-container'>
-        <img src='/assets/img/banniere_Souriante.png' />
+        <img src='/assets/img/Accueil/banniere_Souriante.png' />
         <div className='text-container'>
           <h2>
             <span>VOLONTÉS FU</span>NÉRAIRES
