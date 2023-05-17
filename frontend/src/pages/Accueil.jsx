@@ -1,5 +1,6 @@
 import Avantages from '../components/Avantages'
 import Footer from '../components/Footer'
+import NosServices from '../components/NosServices'
 import Presentation from '../components/Presentation'
 
 function Home () {
@@ -9,6 +10,7 @@ function Home () {
         <Presentation />
       </div>
       <Avantages />
+      <NosServices />
       <Footer />
     </>
   )

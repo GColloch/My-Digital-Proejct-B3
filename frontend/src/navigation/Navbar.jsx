@@ -47,28 +47,28 @@ function Navbar () {
         <nav ref={navRef}>
           <NavLink to='/' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
-              Accueil
+              ACCUEIL
             </li>
           </NavLink>
 
           <NavLink to='/volontées-funéraires' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
-              Volontées Funéraires
+              VOLONTÉS FUNÉRAIRES
             </li>
           </NavLink>
           <NavLink to='/nos-services' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
-              Nos Services
+              NOS SERVICES
             </li>
           </NavLink>
           <NavLink to='/professionnels' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
-              Professionnels
+              PROFESSIONNELS
             </li>
           </NavLink>
           <NavLink to='/notre-equipe' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
             <li>
-              Notre Équipe
+              NOTRE ÉQUIPE
             </li>
           </NavLink>
           <NavLink to='/faq' className={(nav) => (nav.isActive ? 'nav-active' : '')}>

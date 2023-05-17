@@ -1,0 +1,43 @@
+#bloc {
+  background-color: #235853;
+  width: 100%;
+}
+
+h1 {
+  padding: 300px 200px;
+  color: white;
+}
+
+.services {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+  width: calc(33.33% - 40px);
+}
+
+.services img {
+  width: 50px;
+  height: 50px;
+}
+
+.services h2 {
+  margin-top: 10px;
+}
+
+.services p {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.services button {
+  margin-top: 10px;
+  background-color: #5d3b95;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}

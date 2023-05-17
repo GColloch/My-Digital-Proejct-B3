@@ -32,6 +32,7 @@ const Avantages = () => {
             <div class='card'>
               <div className='card-header'>
                 <h3>LE GUIDE</h3>
+                <img className='guide' src='/assets/img/Accueil/guide.png' />
               </div>
               <p>Télécharger-le PDF <br />
                 complet qui vous <br />

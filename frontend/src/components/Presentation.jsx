@@ -13,7 +13,7 @@ const Presentation = () => {
           <p>Un formulaire simple vous permettant de sauvegarder vos <br />
             volontés funéraires et de les partager avec les personnes de votre choix
           </p>
-          <button>Inscrivez vos volontés funéraires</button>
+          <button><b>Inscrivez vos volontés funéraires </b></button>
         </div>
       </div>
     </div>
