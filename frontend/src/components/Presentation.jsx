@@ -4,9 +4,9 @@ import '../styles/Presentation.scss'
 const Presentation = () => {
   return (
     <div className='presentation-container'>
-      <div className='image-container'>
+      <div className='image-containerPresentation'>
         <img src='/assets/img/Accueil/banniere_Souriante.png' />
-        <div className='text-container-volontés'>
+        <div className='text-container-volontésPresentation'>
           <h2>
             <span>VOLONTÉS FU</span>NÉRAIRES
           </h2>

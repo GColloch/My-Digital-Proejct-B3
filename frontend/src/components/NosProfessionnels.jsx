@@ -11,7 +11,7 @@ const NosProfessionnels = () => {
           pour vous aider lors de la pertre d'un proche. <br />
           Vous y retrouvez leurs coordonnées(téléphone, adresse mail...)
         </p>
-        <button>Découvrez</button>
+        <button className='professionnels'>Découvrez</button>
       </div>
       <div className='containerPro'>
         <div className='left-column'>
