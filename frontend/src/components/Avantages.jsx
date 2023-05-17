@@ -4,20 +4,20 @@ import '../styles/Avantages.scss'
 const Avantages = () => {
   return (
     <>
-      <div className='container'>
+      <div className='containerAvantages'>
         <div className='image-container-avantages'>
           <div className='image-circle' />
           <img src='/assets/img/Accueil/pexels-radu-florin-2536579.jpg' className='rounded-image' />
         </div>
         <div className='text-container-avantages'>
           <h2><span>LES AVANTAG</span>ES À 19,99€</h2>
-          <p><span className='txt'>Besoin d'aide pour vos démarches ?</span> <br />
+          <p className='petitText'><span className='txt'>Besoin d'aide pour vos démarches ?</span> <br />
             Accéder à une multitude d'avantages <br />
             <span className='txt2'>et d'outils pour 19,99€ seulement.</span>
           </p>
-          <div className='card-container'>
-            <div className='card'>
-              <div className='card-header'>
+          <div className='card-containerAvantages'>
+            <div className='cardAvantages'>
+              <div className='card-headerAvantages'>
                 <h3>LA CHECK-LIST</h3>
                 <img className='iconee' src='/assets/img/Accueil/check.png' />
               </div>
@@ -29,8 +29,8 @@ const Avantages = () => {
                 effectuées.
               </p>
             </div>
-            <div class='card'>
-              <div className='card-header'>
+            <div class='cardAvantages'>
+              <div className='card-headerAvantages'>
                 <h3>LE GUIDE</h3>
                 <img className='guide' src='/assets/img/Accueil/guide.png' />
               </div>

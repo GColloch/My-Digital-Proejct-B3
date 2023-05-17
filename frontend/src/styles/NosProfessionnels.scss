@@ -1,0 +1,50 @@
+.professionnels {
+  padding: 50px;
+  border-radius: 5px;
+  text-align: center;
+  padding-left: 600px;
+  p {
+    font-size: 16px;
+    padding-right: 300px;
+    text-align: right;
+  }
+}
+
+button {
+  background-color: #5d3b95;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 170px;
+  font-weight: bold;
+}
+
+.containerPro {
+  display: flex;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardPro {
+  background-color: lightgray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.image {
+  margin-left: 20px;
+}
+
+.image img {
+  max-width: 100%;
+}
