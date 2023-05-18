@@ -12,6 +12,15 @@ const NotreEquipe = () => {
           démarches liées à la suite du décès d'un <br />
           proche. Nous mettons en avant :
         </p>
+        <div className='additionalContent'>
+          <img src='/assets/img/Accueil/valeurs.png' alt='Image supplémentaire' />
+          <div className='subtitles'>
+            <h3>L'HUMAIN</h3>
+            <h3>LÉCOUTE</h3>
+            <h3>L'AIDE</h3>
+          </div>
+        </div>
+        <button><b>Découvrez-nous</b></button>
       </div>
     </div>
   )

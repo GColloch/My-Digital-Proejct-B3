@@ -11,13 +11,47 @@
 }
 
 .contentEquipe {
-  margin-left: 50px; /* Ajustez la marge selon vos besoins */
-  margin-bottom: 250px;
-h2 {
-  margin-top: 0; /* Ajout de la marge supérieure */
+  margin-left: 50px;
+  margin-bottom: 180px;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+  button {
+    color: white;
+  background-color: #5d3b95;
+  border: none;
+  margin-left: 10px;
+  padding: 10px 10px;
+  font-size: 25px;
+  border-radius: 5px;
+  }
 }
 
-p {
-  margin-top: 5px; /* Ajout de la marge supérieure */
+.additionalContent {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Ajustez la marge selon vos besoins */
 }
+
+.additionalContent img {
+  width: 55px; /* Ajustez la taille selon vos besoins */
+  height: auto;
+}
+
+.subtitles {
+  display: flex;
+  flex-direction: column;
+
+h3 {
+  margin: 0;
+  margin-top: 20px; /* Ajustez la marge selon vos besoins */
+  padding-bottom: 25px;
+  color: #235853;
+  font-size: 25px;
+  }
 }
