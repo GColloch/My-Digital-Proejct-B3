@@ -25,12 +25,12 @@ button .professionnels {
   display: flex;
 }
 
-.left-column {
+.left-columnPro {
   display: flex;
   flex-direction: column;
 }
 
-.right-column {
+.right-columnPro {
   display: flex;
   flex-direction: column;
 }
@@ -41,10 +41,10 @@ button .professionnels {
   margin-bottom: 10px;
 }
 
-.image {
+.imagePro {
   margin-left: 20px;
 }
 
-.image img {
+.imagePro img {
   max-width: 100%;
 }

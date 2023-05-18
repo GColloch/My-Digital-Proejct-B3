@@ -14,15 +14,15 @@ const NosProfessionnels = () => {
         <button className='professionnels'>Découvrez</button>
       </div>
       <div className='containerPro'>
-        <div className='left-column'>
+        <div className='left-columnPro'>
           <div className='cardPro'>Card 1</div>
           <div className='cardPro'>Card 2</div>
         </div>
-        <div className='right-column'>
+        <div className='right-columnPro'>
           <div className='cardPro'>Card 3</div>
         </div>
-        <div className='image'>
-          <img src='your-image-url' alt='Your Image' />
+        <div className='imagePro'>
+          <img src='your-image-url' />
         </div>
       </div>
 
