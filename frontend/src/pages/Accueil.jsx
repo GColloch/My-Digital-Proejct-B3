@@ -1,5 +1,6 @@
 import Avantages from '../components/Avantages'
 import Footer from '../components/Footer'
+import NosArticles from '../components/NosArticles'
 import NosProfessionnels from '../components/NosProfessionnels'
 import NosServices from '../components/NosServices'
 import NotreEquipe from '../components/NotreEquipe'
@@ -14,6 +15,7 @@ function Home () {
       <Avantages />
       <NosServices />
       <NosProfessionnels />
+      <NosArticles />
       <NotreEquipe />
       <Footer />
     </>
