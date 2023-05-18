@@ -7,12 +7,10 @@
     height: 250px;
   }
   
-  .footer__left {
-    float: left;
-  }
-  
-  .footer__logo {
-    width: 50px;
+  .logofooter {
+    padding-top: 100px;
+    padding-left: 100px;
+    width: 150px;
   }
   
   .footer__social {
@@ -27,12 +25,15 @@
   
   .footer__text {
     text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 400px;
   }
   
   .footer__overlay {
   position: relative;
   box-shadow: 8px 10px 15px 2px rgba(0, 0, 0, 0.2);
-  bottom: 38%;
+  bottom: 330px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #D4921A;

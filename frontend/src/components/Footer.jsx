@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer__left'>
-        <img src='logo.png' alt='Logo' className='footer__logo' />
+        <img className='logofooter' src='/assets/img/logo.png' />
       </div>
       <div className='footer__social'>
         <img src='facebook.png' alt='Facebook' className='footer__social-icon' />
@@ -15,7 +15,9 @@ const Footer = () => {
         <img src='instagram.png' alt='Instagram' className='footer__social-icon' />
       </div>
       <div className='footer__text'>
-        <p>Texte du footer</p>
+        <p>
+          @ 2023 - NEFTI - Tous droits réservés - Politique de confidentialité - Cookies - Mentions Légales
+        </p>
       </div>
       <div className='footer__overlay'>
         <div className='footer__overlay-content'>
