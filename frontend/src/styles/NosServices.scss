@@ -25,29 +25,23 @@ h1 {
   box-shadow: 8px 10px 5px 5px rgba(0, 0, 0, 0.2);
   margin: 20px;
   width: 300px;
-  height: 300px; /* Hauteur fixe pour aligner les boutons */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 10px;
-  justify-content: space-between; /* Aligner les éléments horizontalement et répartir l'espace */
   margin-bottom: 300px;
 }
 
   .démarches {
-    width: 80px;
-    height: 100px;
+    width: 50px;
   }
   
   .cérémonies {
-    width: 80px;
-    height: 100px;
+    width: 60px;
     }
 
   .tarificateur {
-  
-    width: 70px;
-    height: 100px;
+    width: 50px;
   }
 
   .services h2 {
@@ -58,14 +52,17 @@ h1 {
   
   .services p {
     font-size: 15px;
-    margin-bottom: 5px; /* Réduire l'espacement après le paragraphe */
+    padding-bottom: 10px;
   }
 
 .services button {
+  font-weight: bold;
   background-color: #5d3b95;
   color: #fff;
   border: none;
   padding: 8px 10px;
   border-radius: 7px;
   cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 10px;
 }

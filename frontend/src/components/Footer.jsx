@@ -6,24 +6,16 @@ import '../styles/_footer.scss'
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className='footer__left'>
-        <img className='logofooter' src='/assets/img/logo.png' />
+      <div className='logo-containerfooter'>
+        <img className='logofooter' src='path/to/logo.png' alt='Logo' />
       </div>
-      <div className='footer__social'>
-        <img src='facebook.png' alt='Facebook' className='footer__social-icon' />
-        <img src='linkedin.png' alt='LinkedIn' className='footer__social-icon' />
-        <img src='instagram.png' alt='Instagram' className='footer__social-icon' />
+      <div className='text-containerfooter'>
+        <p className='centered-textfooter'>@ 2023 - NEFTI - Tous droits réservés - politique de confidentialité - Cookies - Mentions Légales</p>
       </div>
-      <div className='footer__text'>
-        <p>
-          @ 2023 - NEFTI - Tous droits réservés - Politique de confidentialité - Cookies - Mentions Légales
-        </p>
-      </div>
-      <div className='footer__overlay'>
-        <div className='footer__overlay-content'>
-          <p>RETROUVEZ TOUTES LES RÉPONSES À VOS QUESTIONS</p>
-          <button className='footer__overlay-button'>Notre FAQ</button>
-        </div>
+      <div className='picto-containerfooter'>
+        <img className='picto' src='path/to/picto1.png' alt='Pictogramme 1' />
+        <img className='picto' src='path/to/picto2.png' alt='Pictogramme 2' />
+        <img className='picto' src='path/to/picto3.png' alt='Pictogramme 3' />
       </div>
     </footer>
   )
