@@ -1,42 +1,82 @@
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0;
+  background-color: #235853;
   padding: 20px;
 }
+.containerfooter {
+  display: flex;
+  padding: 0 20px; /* Espace égal à gauche et à droite */
+  align-items: center; /* Alignement vertical centré */
+  background-color: #D4921A;
+  border-radius: 10px;
+  width: 800px;
+  height: 80px;
+  margin: auto;
+  justify-content: center;
+  box-shadow: 8px 10px 15px 5px rgba(0, 0, 0, 0.2);
+  p {
+    color: white;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+  button {
+    background-color: #5d3b95;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  }
+}
+
 
 .logo-containerfooter {
-  display: flex;
-  align-items: center;
   margin-bottom: 10px;
-  margin-left: 20px; /* Ajustez la valeur selon vos besoins */
+  flex-direction: column;
+  margin-left: 100px;
 }
-
 
 .logofooter {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  width: 140px;
+  padding-right: 10px; /* Espace entre le logo et les pictogrammes */
 }
 
-.text-containerfooter {
-  text-align: center;
-  margin-bottom: 10px;
+.picto-containerfooter {
+  color: white;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
 .centered-textfooter {
   font-size: 18px;
-}
-
-.picto-containerfooter {
+  color: white;
   display: flex;
   justify-content: center;
 }
 
-.pictofooter {
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
+
+@media only screen and (max-width: 600px) {
+  .containerfooter {
+    width: 500px;
+    height: 80px;
+    margin: auto;
+    justify-content: center;
+    p {
+      color: white;
+      font-weight: bold;
+      padding-right: 10px;
+    }
+    button {
+      background-color: #5d3b95;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    }
+  }
 }

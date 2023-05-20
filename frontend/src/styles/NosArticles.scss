@@ -55,3 +55,9 @@ h1 {
   cursor: pointer;
   margin-top: auto;
 }
+
+@media only screen and (max-width: 600px){
+  .articles {
+    width: 100px;
+  }
+}

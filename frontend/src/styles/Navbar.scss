@@ -51,8 +51,6 @@ header {
 
 }
 
-
-
 nav {
   margin: 0 auto;
   font-family: 'Articulat', sans-serif;
@@ -115,6 +113,7 @@ nav {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
+		padding-top: 60px;
 	}
 
 	header nav {
@@ -150,4 +149,35 @@ nav {
   nav a {
     font-size: 0.8em;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+  height: 9vh;
+  
+  .logo {
+    padding-top: 30px;
+    width: 40px;
+  }
+    }
+    .mon-espace {
+      padding-top: 12px;
+      height: 2vh;
+      width: 40%;
+      background-color: #235853;
+      position: absolute;
+      top: 0;
+      left: 0; 
+      right: 0; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a{
+        font-size: 10px;
+        margin-right: 10px;
+      }
+    }
+    .icon {
+      width: 20px;
+    }
 }
