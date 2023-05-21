@@ -15,6 +15,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  width: 103%;
   background-image: url('../../public/assets/img/Accueil/banniere_Souriante.png');
   background-size: cover;
   background-position: center;
@@ -30,23 +31,24 @@
 
 .text-container-volontésPresentation {
   color: white;
-  text-align: center;
+  padding-left: 170px;
 }
 
 .text-container-volontésPresentation h2 {
-  font-size: 24px;
   font-weight: bold;
+  font-size: 3.2em;
 }
 
 .text-container-volontésPresentation p {
-  font-size: 16px;
+  font-size: 1.7em;
 }
 
 .text-container-volontésPresentation button {
   margin-top: 20px;
-  background-color: #235853;
+  background-color: #5d3b95;
   color: white;
   border: none;
+  border-radius: 5px;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
@@ -54,43 +56,85 @@
 }
 
 @media only screen and (max-width: 1920px) {
-  .mon-espace a {
+  .presentation a {
     margin-right: 100px;
   }
 }
 
 @media only screen and (max-width: 1440px) {
-  .mon-espace a {
+  .presentation a {
     margin-right: 50px;
+  }
+  .background-image {
+    width: 104%;
+  }
+  .text-container-volontésPresentation h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  
+  .text-container-volontésPresentation p {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (max-width: 1224px) {
+  .background-image {
+  width: 105%;
+  }
+  .text-container-volontésPresentation h2 {
+    font-weight: bold;
+    font-size: 2em;
+  }
+  
+  .text-container-volontésPresentation p {
+    font-size: 1.1em;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .mon-espace a {
+  .presentation a {
     margin-right: 30px;
+  }
+  .background-image {
+    width: 135%;
+  }
+  .text-container-volontésPresentation h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  
+  .text-container-volontésPresentation p {
+    font-size: 1.3em;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .mon-espace {
-    padding-top: 8px;
+  .text-container-volontésPresentation h2 {
+    font-weight: bold;
+    font-size: 1.5em;
   }
-  .mon-espace a {
-    margin-right: 20px;
+  
+  .text-container-volontésPresentation p {
+    font-size: 0.9em;
   }
-  .mon-espace span {
-    font-size: 12px;
+  .background-image {
+    width: 135%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .mon-espace {
+  .presentation {
     padding-top: 6px;
   }
-  .mon-espace a {
-    margin-right: 10px;
+  .background-image {
+    width: 120%;
   }
-  .mon-espace span {
-    font-size: 10px;
+  .text-container-volontésPresentation h2 {
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  .text-container-volontésPresentation p {
+    font-size: 0.8em;
   }
 }
