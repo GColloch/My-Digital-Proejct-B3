@@ -20,6 +20,8 @@
   cursor: pointer;
   margin: 0 auto;
   font-weight: bold;
+  margin-left: 650px;
+  margin-top: 10px;
 }
 
 .container {
@@ -113,4 +115,7 @@ p {
   .center-image img {
     width: 80%; /* Augmenter la largeur de l'image à 80% en mode responsive */
   }
+  .professionnels button {
+    margin-left: 370px;
+  }   
 }
