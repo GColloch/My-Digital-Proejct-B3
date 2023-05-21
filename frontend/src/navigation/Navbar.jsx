@@ -41,10 +41,11 @@ function Navbar () {
             mon espace
           </NavLink>
         </div>
-        <img className='logo' src='/assets/img/logo.png' />
-
         <nav ref={navRef}>
+          <img className='logo' src='/assets/img/logo.png' />
+
           <NavLink to='/' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+
             <li>
               ACCUEIL
             </li>

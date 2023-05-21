@@ -1,12 +1,12 @@
 .mon-espace {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   background-color: #235853;
   display: flex;
   align-items: center;
-  height: 5vh;
+  height: 7vh;
   z-index: 11;
 }
 
@@ -14,6 +14,7 @@
   padding: 12px 20px;
   color: white;
   display: flex;
+  padding-right: 200px;
   flex-grow: 1;
   text-decoration: none;
   justify-content: flex-end; /* Aligner les éléments à droite */
@@ -25,6 +26,7 @@
 }
 
 nav {
+  position: fixed;
   margin: 0 0.5rem; /* Réduire les marges horizontales */
   font-family: 'Articulat', sans-serif;
   width: 80%;
@@ -45,8 +47,9 @@ header .nav-btn {
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;
-  margin-left: auto;
+  float: right;
   padding-right: 20px;
+
 }
 
 header div,
@@ -55,11 +58,11 @@ nav {
   align-items: center;
 }
 
-.nav-active {
+.nav-active {  
   position: relative;
   background-color: #235853;
   color: white;
-  height: 100%;
+  height: 10%;
 }
 
 nav a li {
@@ -71,13 +74,13 @@ nav a li {
   cursor: pointer;
   transition: all 200ms ease-in-out;
   padding: 10px 10px;
+  margin-bottom: 10px;
 }
 
 .logo {
-  display: flex;
   width: 100px;
   height: auto;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-left: 50px;
 }
 
@@ -123,4 +126,31 @@ nav a {
   nav a {
     font-size: 1.5rem;
   }
+  .mon-espace {
+    width: 100%;
+  }a {
+    padding: 12px 20px;
+    color: white;
+    display: flex;
+    padding-right: 200px;
+    flex-grow: 1;
+    text-decoration: none;
+    justify-content: flex-end; /* Aligner les éléments à droite */
+  
+  } 
+}
+
+@media only screen and (max-width: 630px) {
+  .mon-espace {
+    width: 100%;
+  }a {
+    padding: 12px 20px;
+    color: white;
+    display: flex;
+    padding-right: 200px;
+    flex-grow: 1;
+    text-decoration: none;
+    justify-content: flex-end; /* Aligner les éléments à droite */
+  
+  } 
 }
