@@ -1,97 +1,68 @@
-:root {
-	--mainColor: #29335c;
-	--mainColorLight: #5767aa;
-	--secondaryColor: #db2b39;
-	--textColor: #eee;
-}
-
-header {
-  position: fixed;
-	display: flex;
-  flex-direction: row;
-  background-color: white;
-  padding: 0;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-  height: 17vh;
-  
-  //logo
-  .logo {
-    padding-top: 50px;
-    padding-left: 100px;
-    max-width: 100px;
-    object-fit: contain;
-  }
-}
 .mon-espace {
-  background-color: #235853;
   position: absolute;
-  padding-top: 12px;
   top: 0;
-  left: 0; 
-  right: 0; 
+  right: 0;
+  left: 0;
+  background-color: #235853;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 5vh;
-  
-  
-  a {
-    padding-bottom: 10px;
-    margin-left: auto;
-    margin-right: 200px;
-    color: white;
-    display: flex;
-  }
-  
-  .icon {
-    margin-right: 10px;
-  }
+  z-index: 11;
+}
 
+.mon-espace a {
+  padding: 12px 20px;
+  color: white;
+  display: flex;
+  flex-grow: 1;
+  text-decoration: none;
+  justify-content: flex-end; /* Aligner les éléments à droite */
+
+}
+
+.mon-espace .icon {
+  margin-right: 10px;
 }
 
 nav {
-  margin: 0 auto;
+  margin: 0 0.5rem; /* Réduire les marges horizontales */
   font-family: 'Articulat', sans-serif;
+  width: 80%;
+  margin: auto;
+}
 
-a {
-	margin: 0 1rem;
-	color: black;
-	text-decoration: none;
-  list-style: none;
-  }
-
+nav a {
+  color: black;
+  margin: auto;
 }
 
 header .nav-btn {
-	padding: 5px;
-	cursor: pointer;
-	background: transparent;
-	border: none;
-	outline: none;
-	visibility: hidden;
-	opacity: 0;
-	font-size: 1.8rem;
-	margin-left: auto; // Ajout de cette ligne
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+  margin-left: auto;
   padding-right: 20px;
 }
 
-
 header div,
 nav {
-  padding-top: 46px;
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-active {
   position: relative;
   background-color: #235853;
   color: white;
+  height: 100%;
 }
 
- a li {
+nav a li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,7 +73,12 @@ nav {
   padding: 10px 10px;
 }
 
- a {
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+nav a {
   text-decoration: none;
   word-wrap: normal;
   flex-wrap: nowrap;
@@ -110,74 +86,38 @@ nav {
 }
 
 @media only screen and (max-width: 930px) {
-	header .nav-btn {
-		visibility: visible;
-		opacity: 1;
-		padding-top: 60px;
-	}
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 60px;
+  }
 
-	header nav {
-		position: absolute;
-		top: -100vh;
-		left: 0;
-		height: 80%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 0.7rem;
-		transition: 1s;
-	}
+  header nav {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    transition: 1s;
+    background-color: white;
+  }
 
-  
-	header .responsive_nav {
-		transform: translateY(100vh);
-	}
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
 
-	nav .nav-close-btn {
-		position: absolute;
-		top: 2rem;
-		right: 2rem;
-	}
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
 
-	nav a {
-		font-size: 1.5rem;
-	}
-}
-@media only screen and (max-width: 800px) {
   nav a {
-    font-size: 0.8em;
+    font-size: 1.5rem;
   }
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-  height: 9vh;
-  
-  .logo {
-    padding-top: 30px;
-    width: 40px;
-  }
-    }
-    .mon-espace {
-      padding-top: 12px;
-      height: 2vh;
-      width: 40%;
-      background-color: #235853;
-      position: absolute;
-      top: 0;
-      left: 0; 
-      right: 0; 
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      a{
-        font-size: 10px;
-        margin-right: 10px;
-      }
-    }
-    .icon {
-      width: 20px;
-    }
 }

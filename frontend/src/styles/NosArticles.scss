@@ -3,11 +3,12 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centrer horizontalement les blocs */
 }
 
 .titlearticles {
   padding-top: 250px;
-  padding-left: 240px;
+  padding-left: 280px;
 }
 
 h1 {
@@ -16,14 +17,18 @@ h1 {
 
 .card-containerarticles {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 0 30px;
 }
 
 .articles {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 8px 10px 5px 5px rgba(0, 0, 0, 0.2);
-  margin: 20px;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -39,8 +44,9 @@ h1 {
 
 .articles p {
   padding-bottom: 10px;
-  align-self: stretch; /* Ajouter l'alignement automatique sur toute la largeur */
+  align-self: stretch;
 }
+
 .articles .testament {
   padding-top: 15px;
 }
@@ -56,8 +62,19 @@ h1 {
   margin-top: auto;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px) {
+  .titlearticles {
+    padding-left: 50px;
+    text-align: center;
+  }
+
+  .card-containerarticles {
+    justify-content: center;
+  }
+
   .articles {
-    width: 100px;
+    width: 300px;
+    margin: 20px;
+    margin-bottom: 100px;
   }
 }

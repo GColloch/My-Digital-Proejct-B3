@@ -2,11 +2,11 @@
   padding: 50px;
   border-radius: 5px;
   text-align: center;
-  padding-left: 600px;
+  padding-left: 10%;
+  padding-right: 10%;
 
   p {
     font-size: 16px;
-    padding-right: 300px;
     text-align: right;
   }
 }
@@ -18,33 +18,40 @@
   padding: 8px 10px;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 170px;
+  margin: 0 auto;
   font-weight: bold;
 }
+
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Pour placer les éléments à gauche */
   align-items: center;
   flex-wrap: wrap;
   margin: 20px;
   margin-bottom: 140px;
 }
 
+
 .left-cards {
   display: flex;
   flex-direction: column;
+  align-items: flex-end; /* Pour placer le bloc au milieu à droite */
+  justify-content: center; /* Pour centrer verticalement le bloc */
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
   margin: 10px;
   margin-top: 50px;
   width: 250px;
-  background-color: #ffffff; /* Couleur d'arrière-plan des cartes */
-  border-radius: 10px; /* Border-radius des cartes */
+  background-color: #ffffff;
+  border-radius: 10px;
   box-shadow: 8px 10px 5px 1px rgba(0, 0, 0, 0.1);
+  margin-left: auto; /* Pour le placer à droite */
+  margin-right: auto; /* Pour le centrer horizontalement */
 }
 
 .card img {
@@ -83,12 +90,27 @@
 }
 
 .center-image img {
-  width: 500px;
+  width: 50%; /* Largeur de l'image à 50% */
   height: auto;
   border-radius: 10px;
   object-fit: cover;
+  margin-left: auto; /* Aligner l'image à droite */
+  margin-right: auto; /* Aligner l'image à gauche */
 }
 
-h3, p {
+h3,
+p {
   margin: 0;
+}
+
+@media (max-width: 1920px) {
+  .center-image img {
+    width: 40%; /* Réduire la largeur de l'image à 40% pour 1920x1080 px */
+  }
+}
+
+@media (max-width: 768px) {
+  .center-image img {
+    width: 80%; /* Augmenter la largeur de l'image à 80% en mode responsive */
+  }
 }

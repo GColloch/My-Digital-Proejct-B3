@@ -1,3 +1,4 @@
+import React from 'react'
 import Avantages from '../components/Avantages'
 import Footer from '../components/Footer'
 import NosArticles from '../components/NosArticles'
@@ -6,7 +7,7 @@ import NosServices from '../components/NosServices'
 import NotreEquipe from '../components/NotreEquipe'
 import Presentation from '../components/Presentation'
 
-function Home () {
+const Home = () => {
   return (
     <>
       <div className='container'>

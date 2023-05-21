@@ -1,108 +1,95 @@
-.presentation-container {
-  width: 100%;
-}
-
-.image-containerPresentation {
+.presentation {
   position: relative;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  height: 100vh;
 }
 
-.image-containerPresentation img {
-  width: 100%;
-  transform: scaleX(-1);
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../public/assets/img/Accueil/banniere_Souriante.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: scaleX(-1); /* Inverser l'image horizontalement */
+}
+
+
+.text-container {
+  z-index: 1;
 }
 
 .text-container-volontésPresentation {
-  position: absolute;
-  top: 55%;
-  left: 42%;
-  transform: translate(-50%, -50%);
   color: white;
-  h2 {
-    font-size: 3.1em;
-  span {
-    border-bottom: solid 5px;
-    border-color: #D4921A;
-    padding-bottom: 5px;
-      }
-     }
-  P {
-    font-size: 25px;
-    max-width: 88%;
-  }
-  button {
-    color: white;
-    background-color: #5d3b95;
-    border: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    border-radius: 5px;
+  text-align: center;
+}
+
+.text-container-volontésPresentation h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text-container-volontésPresentation p {
+  font-size: 16px;
+}
+
+.text-container-volontésPresentation button {
+  margin-top: 20px;
+  background-color: #235853;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1920px) {
+  .mon-espace a {
+    margin-right: 100px;
   }
 }
-@media (max-width: 768px) {
-  .text-container-volontésPresentation {
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-  }
 
-  .text-container-volontésPresentation h2 {
-    font-size: 1em;
-    padding-bottom: 10px;
+@media only screen and (max-width: 1440px) {
+  .mon-espace a {
+    margin-right: 50px;
   }
+}
 
-  .text-container-volontésPresentation p {
+@media only screen and (max-width: 1024px) {
+  .mon-espace a {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mon-espace {
+    padding-top: 8px;
+  }
+  .mon-espace a {
+    margin-right: 20px;
+  }
+  .mon-espace span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mon-espace {
+    padding-top: 6px;
+  }
+  .mon-espace a {
+    margin-right: 10px;
+  }
+  .mon-espace span {
     font-size: 10px;
-    max-width: 90%;
-  }
-
-  .text-container-volontésPresentation button {
-    font-size: 14px;
-  }
-  .image-containerPresentation {
-    position: relative;
-    width: 195%;
-  }
-}
-@media (max-width: 300px) {
-  .image-containerPresentation {
-    position: relative;
-    width: 100%;
-  }
-  .text-container-volontésPresentation h2 {
-    font-size: 2em;
-    padding-bottom: 10px;
-  }
-
-  .text-container-volontésPresentation p {
-    font-size: 20px;
-    max-width: 90%;
-    padding-bottom: 12px;
-  }
-
-  .text-container-volontésPresentation button {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 420px) {
-  .image-containerPresentation {
-    margin-top: 10px;
-    position: relative;
-    width: 65%;
-  }
-  .text-container-volontésPresentation h2 {
-    font-size: 2em;
-    padding-bottom: 10px;
-  }
-
-  .text-container-volontésPresentation p {
-    font-size: 20px;
-    max-width: 90%;
-    padding-bottom: 12px;
-  }
-
-  .text-container-volontésPresentation button {
-    font-size: 20px;
   }
 }

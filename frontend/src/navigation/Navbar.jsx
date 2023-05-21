@@ -30,8 +30,6 @@ function Navbar () {
   return (
     <>
       <header>
-        <img className='logo' src='/assets/img/logo.png' />
-
         <div
           className={`mon-espace ${isScrolled ? 'scrolled' : ''}`}
         >
@@ -43,6 +41,7 @@ function Navbar () {
             mon espace
           </NavLink>
         </div>
+        <img className='logo' src='/assets/img/logo.png' />
 
         <nav ref={navRef}>
           <NavLink to='/' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
