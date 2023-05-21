@@ -57,7 +57,14 @@
   color: #235853;
   font-size: 25px;
 }
-
+@media only screen and (max-width: 800px) { 
+  .imageEquipe {
+  width: 500px;
+  height: 500px;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+}
 @media only screen and (max-width: 600px) {
   .containerEquipe {
     flex-direction: column;
