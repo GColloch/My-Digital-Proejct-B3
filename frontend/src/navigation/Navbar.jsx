@@ -37,13 +37,12 @@ function Navbar () {
             to='/profil'
             style={{ color: isScrolled ? 'black' : 'white' }}
           ><FaUserAlt className='icon' size={30} color={isScrolled ? 'black' : 'white'} />
-
             mon espace
           </NavLink>
         </div>
         <nav ref={navRef}>
-          <img className='logo' src='/assets/img/logo.png' />
 
+          <img className='logo' src='/assets/img/logo.png' />
           <NavLink to='/' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
 
             <li>
