@@ -31,7 +31,6 @@ nav {
   position: fixed;
   margin: 0 0.5rem; /* Réduire les marges horizontales */
   font-family: 'Articulat', sans-serif;
-  width: 80%;
   Z-INDEX: 100;
 }
 
@@ -73,7 +72,7 @@ nav a li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 50px;
+  min-height: 56px;
   cursor: pointer;
   transition: all 200ms ease-in-out;
   padding: 10px 10px;
@@ -91,6 +90,26 @@ nav a {
   word-wrap: normal;
   flex-wrap: nowrap;
   font-weight: bold;
+}
+@media only screen and (max-width: 1500px) {
+  nav {
+    top: 6%;
+    position: fixed;
+    margin: 0 0.5rem; /* Réduire les marges horizontales */
+    font-family: 'Articulat', sans-serif;
+    Z-INDEX: 100;
+  }
+  
+  nav a {
+    color: black;
+    margin-left: 10px;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 @media only screen and (max-width: 930px) {

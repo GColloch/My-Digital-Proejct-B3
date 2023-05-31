@@ -5,6 +5,8 @@ const Presentation = () => {
   return (
     <div class='presentation'>
       <div class='background-image' />
+      <div class='square' />
+
       <div class='text-container'>
         <div class='text-container-volontésPresentation'>
           <h2><span>VOLONTÉS FUNÉ</span>RAIRES</h2>

@@ -87,7 +87,28 @@ span {
   margin-left: 220px;
   margin-right: auto; /* Centrage horizontal du bouton */
 }
-
+@media (max-width: 1300px) {
+.cardAvantages {
+  width: 150px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 20px;
+  background-color: white;
+  box-shadow: 8px 13px 5px 5px #d6d6d6;
+  border-radius: 5%;
+  }
+  .rounded-image {
+    margin-left: 100px;
+    width: 70%; /* Ajuster la largeur de l'image en pourcentage */
+    height: auto; /* Ajuster la hauteur de l'image de manière proportionnelle */
+    margin-bottom: 100px;
+  }
+  .text-container-avantages h2 {
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 768px) {
   .containerAvantages {
     flex-direction: column;

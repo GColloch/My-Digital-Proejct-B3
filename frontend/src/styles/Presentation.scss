@@ -7,12 +7,19 @@
   align-items: center;
   width: 100%;
   height: 100vh;
-  margin: 0;
   
 }
-
+.square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #555;
+}
 .background-image {
   position: absolute;
+  opacity: 0.66;
   top: 0;
   left: 0;
   right: 0;
@@ -67,6 +74,12 @@
   .presentation a {
     margin-right: 50px;
   }
+  .square {
+    position: absolute;
+    height: 100%;
+    width: 120%;
+    background-color: #555;
+  }
   .background-image {
     width: 104%;
   }
@@ -83,6 +96,12 @@
   .background-image {
   width: 105%;
   }
+  .square {
+    position: absolute;
+    height: 100%;
+    width: 105%;
+    background-color: #555;
+  }
   .text-container-volontésPresentation h2 {
     font-weight: bold;
     font-size: 2em;
@@ -97,8 +116,15 @@
   .presentation a {
     margin-right: 30px;
   }
+  
+  .square {
+    position: absolute;
+    height: 100%;
+    width: 120%;
+    background-color: #555;
+  }
   .background-image {
-    width: 135%;
+    width: 120%;
   }
   .text-container-volontésPresentation h2 {
     font-weight: bold;
@@ -116,6 +142,12 @@
     font-size: 1.5em;
   }
   
+  .square {
+    position: absolute;
+    height: 100%;
+    width: 135%;
+    background-color: #555;
+  }
   .text-container-volontésPresentation p {
     font-size: 0.9em;
   }
@@ -128,8 +160,15 @@
   .presentation {
     padding-top: 6px;
   }
+  
+  .square {
+    position: absolute;
+    height: 100%;
+    width: 161%;
+    background-color: #555;
+  }
   .background-image {
-    width: 120%;
+    width: 161%;
   }
   .text-container-volontésPresentation h2 {
     font-weight: bold;
